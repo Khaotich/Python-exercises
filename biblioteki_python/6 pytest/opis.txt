@@ -1,0 +1,16 @@
+pytest
+-v - pokazuje, które test przeszły a które nie
+-k
+-m NAZWA (odpala test zmarkowany dekoratorem @pytest.mark.NAZWA)
+-x stopuje wykonanie skryptu po failu testu
+--tb=no
+-fEsxX - opcje opisów testów
+-s - więcej szczegółów i parametrów
+-q ucisza powiadomienia pytesta
+
+dekorator @pytest.mark.parametrize dodaje parametry zamiast kilku assertów
+
+def setup_module(module): - inicjacja zasobów do testów
+def teardown_module(module): - zwalnianie zasobów po testach
+@pytest.fixture - zastępuje funkcje powyżej
+@pytest.fixture(scope='module') - zastępuje funkcje powyżej
